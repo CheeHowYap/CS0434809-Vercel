@@ -6,6 +6,7 @@ import { sitecoreApiHost, sitecoreApiKey } from '../temp/config';
 const JssNextForm = ({ fields, router }: any) => (
     <Form
       form={fields}
+      sitecoreApiHost={sitecoreApiHost}
       sitecoreApiKey={sitecoreApiKey}
       onRedirect={(url) => router.push(url)}
     />
